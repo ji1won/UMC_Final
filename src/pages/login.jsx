@@ -48,8 +48,8 @@ const Login = () => {
       setMsg('Loading...'); // Loading 메시지 출력
 
       const body = {
-        id: ID,
-        pw: pw
+        id: 'umcweb',
+        pw: '1234'
       };
 
       axios.post('http://localhost:3000/user/login', body)
