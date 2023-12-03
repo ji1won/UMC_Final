@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { authActions  } from '../redux/actions/authActions';
 import axios from 'axios';
 import '../login.css';
@@ -17,7 +17,6 @@ const Login = () => {
   const [msg, setMsg] = useState('');
   const { performLogin } = authActions;
   const dispatch = useDispatch();
-  const error = useSelector(state => state.error);
   const navigate = useNavigate();
 
   useEffect(() => {
