@@ -42,14 +42,15 @@ const Login = () => {
     localStorage.setItem('userID', id); // ID 저장
     localStorage.setItem('userToken', token); // 토큰 저장
   };
+  
   const onClickConfirmButton = () => {
     if (IDValid && pwValid) {
       setLoading(true); // API 호출 전 로딩 시작
       setMsg('Loading...'); // Loading 메시지 출력
 
       const body = {
-        id: 'umcweb',
-        pw: '1234'
+        id: ID,
+        pw: pw
       };
 
       axios.post('http://localhost:3000/user/login', body)
