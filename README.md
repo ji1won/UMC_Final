@@ -1,4 +1,7 @@
 # UMC_Final
+
+https://www.notion.so/makeus-challenge/1a4ec32c80774683964631d1baa92a38?pvs=4
+
 ## 10 Week
 웹 배포를 이해하고 실제 웹 페이지를 배포해본다.
 ### 🥞 실습 인증
